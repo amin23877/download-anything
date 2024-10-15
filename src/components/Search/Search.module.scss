@@ -1,0 +1,47 @@
+@import "@/styles/mixins.scss";
+@import "@/styles/variables.scss";
+
+.main {
+    height: 100vh;
+    @include flex-center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.title {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.inputContainer {
+    width: 50%;
+    border: 1px solid $primary-300;
+    border-radius: 7px;
+    padding: 4px;
+    display: flex;
+    align-items: center;
+    padding-left: 12px;
+    gap: 12px;
+    .searchBtn {
+        background-color: $primary;
+        border-radius: 5px;
+        width: 40px;
+        height: 40px;
+        @include flex-center;
+        color: white;
+        cursor: pointer;
+        transition: all ease-in-out 0.4s;
+        border: none;
+        &:hover {
+            background-color: $primary-500;
+        }
+    }
+}
