@@ -25,6 +25,7 @@ function Search() {
                         sx={{ flex: 1 }}
                         placeholder="Enter your query here"
                         name="query"
+                        style={{ color: "var(--foreground)" }}
                     />
                     <button className={classes.searchBtn} type="submit">
                         <SearchRoundedIcon />

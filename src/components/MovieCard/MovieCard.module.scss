@@ -1,7 +1,7 @@
 @import "@/styles/variables.scss";
 
 .container {
-    width: calc(100vw - 100px);
+    min-width: calc(100vw - 100px);
     max-width: 1000px;
     display: grid;
     grid-template-columns: 100px 1fr;
@@ -10,10 +10,6 @@
     border-radius: 8px;
     padding: 16px;
     cursor: pointer;
-    &:hover {
-        border-color: $primary;
-        background-color: $primary-200;
-    }
 
     .details {
         overflow: hidden;
@@ -24,15 +20,21 @@
         height: 100%;
         font-size: 14px;
         font-weight: 500;
-        color: $sub-text;
+        color: var(--foregroundsub);
 
         .name {
             font-size: 18px;
             font-weight: 500;
-            color: black;
+            color: var(--foreground);
         }
+    }
 
-        .size {
+    &:hover {
+        border-color: $primary;
+        background-color: $primary-200;
+
+        .name {
+            color: $h-dark;
         }
     }
 }

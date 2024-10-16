@@ -6,6 +6,7 @@
     @include flex-center;
     flex-direction: column;
     width: 100%;
+    padding: 16px;
 }
 
 .title {
@@ -22,7 +23,8 @@
 }
 
 .inputContainer {
-    width: 50%;
+    width: 100%;
+    max-width: 750px;
     border: 1px solid $primary-300;
     border-radius: 7px;
     padding: 4px;
